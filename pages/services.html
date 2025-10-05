@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | CareBuddy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<!-- Contact Popup Modal -->
+<script>
+  let popupShownCount = 0;
+  const popupLimit = 2;
+
+  function showPopup() {
+    if (popupShownCount < popupLimit) {
+      document.getElementById('contactPopup').style.display = 'flex';
+      popupShownCount++;
+      sessionStorage.setItem('popupShownCount', popupShownCount);
+    }
+  }
+
+  function closePopup() {
+    document.getElementById('contactPopup').style.display = 'none';
+  }
+
+  window.onload = function () {
+    popupShownCount = parseInt(sessionStorage.getItem('popupShownCount')) || 0;
+
+    // Show first popup after 10 seconds
+    setTimeout(showPopup, 10000); // 10,000 ms = 10s
+
+    // Set interval for next popup every 60 seconds (1 minute)
+    const interval = setInterval(() => {
+      if (popupShownCount >= popupLimit) {
+        clearInterval(interval); // Stop after showing 2 times
+      } else {
+        showPopup();
+      }
+    }, 60000); // 60,000 ms = 1 min
+  };
+</script>
+
+
+<!-- Contact Popup Modal -->
+<div id="contactPopup" class="popup-overlay">
+  <div class="popup-box">
+    <h3>Need Help?</h3>
+    <p>Have questions or need a quote? We'd love to hear from you!</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+    <button class="close-btn" onclick="closePopup()">×</button>
+  </div>
+</div>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo" aria-label="CareBuddy">
+        <img src="../images/logo.png" alt="CareBuddy" />
+        <div class="company-name">
+          <h1>CareBuddy </h1>
+          <p>Because every moments need care.</p>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="/pages/howitworks.html">How it works</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/contact.html">Hire a CareBuddy</a>
+      </nav>
+    </div>
+  </header>
+
+ <section class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="img-frame">
+        <img src="../images/asistance.jpg" alt="Home Care">
+      </div>
+      <h3>Home Care</h3>
+      <p>Assistance, companionship, and<br> daily support.</p>
+    </div>
+
+    <div class="card">
+      <div class="img-frame">
+        <img src="../images/hospital care.jpg" alt="Hospital Care">
+      </div>
+      <h3>Hospital Care</h3>
+      <p>Professional help when your loved <br>one is admitted.</p>
+    </div>
+
+    <div class="card">
+      <div class="img-frame">
+        <img src="../images/custom.webp" alt="Custom Care">
+      </div>
+      <h3>Custom Care Plans</h3>
+      <p>Flexible schedules: hourly, daily, <br>or weekly.</p>
+    </div>
+
+    <div class="card">
+      <div class="img-frame">
+        <img src="../images/medical.jpg" alt="Medical Support">
+      </div>
+      <h3>Medical Support</h3>
+      <p>Reliable and trusted medical <br>assistance anytime.</p>
+    </div>
+  </div>
+  </section>
+  <hr>
+  <br>
+  <br>
+<section style="text-align: center; margin: 20px 0;">
+  <label for="Fee Structure" style="display: block; font-weight: bold; margin-bottom: 10px;">
+    Fee Structure / Cost / Service
+  </label>
+  <div>
+    <img src="../images/table.jpg" alt="Fee Table" style="width: 80%; max-width: 800px; height: auto; display: inline-block;" />
+  </div>
+</section>
+
+
+   
+    <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CareBuddy | Roorkee</p>
+    <div class="social-links">
+      <p>Reach out to us</p>
+
+      <!-- Gmail -->
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBptDzJMKFGHfSSxgvWSHfqmMjlCvSggmfHKmHbsHHwzgBbttzlCDfpJfZJTdjRpjwDMqjv" target="_blank"
+        aria-label="Follow us on Facebook">
+        <img src="../images/gmail_icon.jpg" alt="gmail" style="width: 24px; height: 24px;" />
+      </a>
+
+      
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

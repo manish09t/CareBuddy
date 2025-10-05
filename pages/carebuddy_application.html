@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hire a CareBuddy | CareBuddy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo" aria-label="CareBuddy">
+        <img src="../images/logo.png" alt="CareBuddy" />
+        <div class="company-name">
+          <h1>CareBuddy </h1>
+          <p>Because every moments need care.</p>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="/pages/howitworks.html">How it works</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/contact.html">Hire a CareBuddy</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section container">
+    <h2>Become a CareBuddy</h2>
+    <p><strong>Email:</strong> razmanish22778@gmail.com</p>
+    <p><strong>Phone:</strong> +918271452808</p>
+    <br>
+
+    <h3>Become a CareBuddy</h3>
+    <form action="https://formspree.io/f/mnngzzla" method="POST">
+      <label for="dob">Candidate Name</label>
+      <input type="text" name="name" placeholder="Candidate Name" required />
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" required min="1900-01-01" max="2007-12-1" />
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+         <option value="">--Select--</option> <!-- placeholder -->
+         <option value="male">Male</option>
+         <option value="female">Female</option>
+         <option value="other">Other</option>
+      </select>
+      <label for="qualification">Candidate Qualification</label>
+      <textarea id="qualification" name="qualification" placeholder="Enter Candidate's Qualification" required></textarea>
+      <label for="experience">Candidate Email</label>
+      <input type="email" name="_replyto" placeholder="Candidate Email" required />
+      <label for="phone">Candidate Phone Number</label>
+      <input type="tel" name="phone" placeholder="Candidate Phone Number" pattern="[0-9]{10}" required />
+      <label for="aadhar">Candidate Aadhar Number</label>
+      <input type="text" name="aadhar" placeholder="Candidate Aadhar Number" pattern="[0-9]{12}" maxlength="12" required />
+      <label for="address">Candidate Address</label>
+      <textarea id="address" name="address" placeholder="Enter Candidate's Address" required></textarea>
+      <label for="experience">Experience in Medical Field</label>
+      <select id="experience" name="experience" required>
+         <option value="">--Select--</option> <!-- placeholder -->
+         <option value="male">Less than 1 Year</option>
+         <option value="female">less than 2 Year</option>
+         <option value="other">More than 2 Year</option>
+      </select>
+
+      <label for="documents">Upload Candidate's Aadhar Card (Photo or PDF):</label>
+      <input type="file" id="documents" name="documents" accept="image/*,application/pdf" required>
+
+      
+      <label for="documents">Upload Candidate's ID Card (Photo or PDF):</label>
+      <h5>*Upload College Id Card for Student / Upload Company Id Card for Working Professional</h5>
+      <input type="file" id="documents" name="documents" accept="image/*,application/pdf">
+
+      <label for="message">Additional Message (if any)</label>
+      <textarea name="message" rows="5" placeholder="Additional messages...." ></textarea>
+      <input type="hidden" name="_subject" value="CareBuddy Application" />
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+
+  
+
+       <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CareBuddy | Roorkee</p>
+    <div class="social-links">
+      <p>Reach out to us</p>
+
+      <!-- Gmail -->
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBptDzJMKFGHfSSxgvWSHfqmMjlCvSggmfHKmHbsHHwzgBbttzlCDfpJfZJTdjRpjwDMqjv" target="_blank"
+        aria-label="Follow us on Facebook">
+        <img src="../images/gmail_icon.jpg" alt="Gmail" style="width: 24px; height: 24px;" />
+      </a>
+
+      
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

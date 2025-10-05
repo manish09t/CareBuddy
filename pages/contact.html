@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hire a CareBuddy | CareBuddy</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo" aria-label="CareBuddy">
+        <img src="../images/logo.png" alt="CareBuddy" />
+        <div class="company-name">
+          <h1>CareBuddy </h1>
+          <p>Because every moments need care.</p>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <a href="../index.html">Home</a>
+        <a href="/pages/howitworks.html">How it works</a>
+        <a href="/pages/services.html">Services</a>
+        <a href="/pages/carebuddy_application.html">Become a Buddy</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section container">
+    <h2>Hire a CareBuddy</h2>
+    <p><strong>Email:</strong> razmanish22778@gmail.com</p>
+    <p><strong>Phone:</strong> +918271452808</p>
+    <br>
+
+    <h3>Send a Message To us</h3>
+    <form action="https://formspree.io/f/mqabbaqn" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" pattern="[0-9]{10}" required />
+      <Label>Choose Required CareBuddy</Label>
+      <select id="experience" name="experience" required>
+         <option value="">--Select--</option> <!-- placeholder -->
+         <option value="male">Fresher</option>
+         <option value="female">Experienced</option>
+         <option value="other">Professional</option>
+      </select>
+      <textarea name="message" rows="5" placeholder="Your Message…" required></textarea>
+      <input type="hidden" name="_subject" value="CareBuddy Inquiry" />
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+      <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 CareBuddy | Roorkee</p>
+    <div class="social-links">
+      <p>Reach out to us</p>
+
+      <!-- Gmail -->
+      <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBptDzJMKFGHfSSxgvWSHfqmMjlCvSggmfHKmHbsHHwzgBbttzlCDfpJfZJTdjRpjwDMqjv" target="_blank"
+        aria-label="Follow us on Facebook">
+        <img src="../images/gmail_icon.jpg" alt="Gmail" style="width: 24px; height: 24px;" />
+      </a>
+
+      
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
